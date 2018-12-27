@@ -1,4 +1,4 @@
 ## Docker Learning
 
 
-"# รันโดยใช้คำสั่ง docker-compose up"
+"# รันโดยใช้คำสั่ง docker-compose up -d"
