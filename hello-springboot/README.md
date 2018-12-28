@@ -1,4 +1,10 @@
 ## Hello Spring-Boot Project
+" ก่อน build Dcoker Image ได้ อย่าลืมสร้างไฟล์ .jar ของโปรเจค ด้วยการรันคำสั่ง"
+````
+$ mvn package
+````
 
-"# ก่อน build Dcoker Image ได้ อย่าลืมสร้างไฟล์ .jar ของโปรเจค ด้วยการรันคำสั่ง  mvn package ก่อน"
-"# รันโดยใช้คำสั่ง docker build -t hello-springboot ."
+"สร้าง image ของ  project นี้ได้ โดยใช้คำสั่ง"
+````
+$ docker build -t hello-springboot .
+````
