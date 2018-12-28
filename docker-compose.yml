@@ -6,3 +6,9 @@ services:
         ports:
             - 8888:80
         container_name: hello-nginx
+    hello-springboot:
+        build:
+            context: hello-springboot/
+        ports:
+            - 8889:8080
+        container_name: hello-springboot
