@@ -10,10 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoApplication {
 
-	@CrossOrigin
+	@CrossOrigin(origins = "http://localhost:4200")
 	@GetMapping("/")
-	public String home() {
-		return "Hello Docker Spring-Boot World!!!!!";
+	public Demo[] home() {
+		Demo[] demos = { new Demo("Hello Docker Spring-Boot World!!!!!"), new Demo("Hello Hello!!!!!")};
+		return demos;
 	}
 
 	public static void main(String[] args) {
