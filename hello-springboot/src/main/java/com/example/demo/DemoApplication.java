@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoApplication {
 
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin(origins = "http://192.168.99.100:8888/")
+	// @CrossOrigin(origins = "http://localhost:4200")
 	@GetMapping("/")
 	public Demo[] home() {
 		Demo[] demos = { new Demo("Hello Docker Spring-Boot World!!!!!"), new Demo("Hello Hello!!!!!")};
