@@ -11,6 +11,6 @@ export class AppService {
 
   getBackendService() {
     const api_endpoint = environment.backend_url;
-    return this._http.get<string>('http://192.168.99.100:8889/');
+    return this._http.get<string>(environment.backend_url);
   }
 }
